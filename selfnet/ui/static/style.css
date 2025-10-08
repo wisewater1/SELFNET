@@ -1,0 +1,114 @@
+:root {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b172a;
+    color: #f4f6fb;
+}
+
+a {
+    color: #7bc7ff;
+}
+
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    background: rgba(13, 27, 42, 0.9);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2, h3 {
+    margin: 0 0 0.75rem 0;
+    font-weight: 600;
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input, textarea, select, button {
+    font: inherit;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 34, 51, 0.9);
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: #7bc7ff;
+    color: #0b172a;
+    font-weight: 600;
+    border: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 32px rgba(123, 199, 255, 0.3);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+
+.flash {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.flash.success {
+    background: rgba(76, 217, 100, 0.15);
+    border: 1px solid rgba(76, 217, 100, 0.4);
+}
+
+.flash.error {
+    background: rgba(255, 107, 107, 0.15);
+    border: 1px solid rgba(255, 107, 107, 0.4);
+}
+
+.flash.info {
+    background: rgba(123, 199, 255, 0.15);
+    border: 1px solid rgba(123, 199, 255, 0.4);
+}
+
+.grid-two {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+small {
+    color: rgba(244, 246, 251, 0.7);
+}

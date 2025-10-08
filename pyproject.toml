@@ -1,0 +1,16 @@
+[project]
+name = "selfnet"
+version = "0.1.0"
+description = "Simulation primitives for the SELFNet economic network"
+authors = [{name = "SELFNet Contributors"}]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+keywords = ["blockchain", "ubi", "governance"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
